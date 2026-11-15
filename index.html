@@ -65,6 +65,10 @@
             justify-content: space-between;
         }
 
+        .card[hidden] {
+            display: none !important;
+        }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0,0,0,0.15);
@@ -139,18 +143,22 @@
         <h1>SMK MUHAMMADIYAH 2 WATES</h1>
     </header>
 
+    <div id="today-info" style="text-align:center; color:#1e4b70; font-weight:600; margin: 0 0 8px;">
+        Mata pelajaran yang tampil adalah jadwal ujian hari ini.
+    </div>
+
     <div class="container">
         <!-- Kartu Matematika -->
-        <div class="card card-matematika" id="mapel-matematika">
+        <div class="card card-matematika" id="mapel-matematika" data-exam-date="2026-11-23">
             <div>
                 <h2>Matematika</h2>
-                <p>Hari/Tanggal : Senin / 23 November 2026<br>Waktu: 07.30-08.30</p>
+                <p>Hari/Tanggal : Minggu / 15 November 2026<br>Waktu: 07.30-08.30</p>
             </div>
             <a href="https://forms.gle/TxeHP1ftChKdgHdt7" target="_blank" class="btn-link">Mulai Ujian</a>
         </div>
 
         <!-- Kartu PKN -->
-        <div class="card card-PKN" id="mapel-pkn">
+        <div class="card card-PKN" id="mapel-pkn" data-exam-date="2026-11-23">
             <div>
                 <h2>PKN</h2>
                 <p>Hari/Tanggal : Senin / 23 November 2026<br>Waktu: 08.30-09.30</p>
@@ -159,16 +167,16 @@
         </div>
 
         <!-- Kartu Seni Budaya -->
-        <div class="card card-SeniBudaya" id="mapel-senibudaya">
+        <div class="card card-SeniBudaya" id="mapel-senibudaya" data-exam-date="2026-11-23">
             <div>
                 <h2>Seni Budaya</h2>
                 <p>Hari/Tanggal : Senin / 23 November 2026<br>Waktu: 10.00-11.00</p>
             </div>
-            <a href="https://forms.gle/zWk2rZCV6otzXnaN7" target="_blank" class="btn-link">Mulai Ujian</a>
+            <a href="https://forms.gle/P4Hbbqj1y3JFiaKG6" target="_blank" class="btn-link">Mulai Ujian</a>
         </div>
 
         <!-- Kartu Bahasa Indonesia -->
-        <div class="card card-BahasaIndonesia" id="mapel-bindonesia">
+        <div class="card card-BahasaIndonesia" id="mapel-bindonesia" data-exam-date="2026-11-24">
             <div>
                 <h2>Bahasa Indonesia</h2>
                 <p>Hari/Tanggal : Selasa / 24 November 2026<br>Waktu: 07.30-08.30</p>
@@ -177,16 +185,16 @@
         </div>
 
         <!-- Kartu IPAS -->
-        <div class="card card-IPAS" id="mapel-ipas">
+        <div class="card card-IPAS" id="mapel-ipas" data-exam-date="2026-11-24">
             <div>
                 <h2>IPAS</h2>
                 <p>Hari/Tanggal : Selasa / 24 November 2026<br>Waktu: 08.30-09.30</p>
             </div>
-            <a href="https://forms.gle/oNnx3bn4Qfdmw8y1A" target="_blank" class="btn-link">Mulai Ujian</a>
+            <a href="https://forms.gle/YpqBoYQK4cBz8XrJ7" target="_blank" class="btn-link">Mulai Ujian</a>
         </div>
 
         <!-- Kartu dasar program keahlian MPLB -->
-        <div class="card card-dasarprogramkeahlianMPLB" id="mapel-mplb">
+        <div class="card card-dasarprogramkeahlianMPLB" id="mapel-mplb" data-exam-date="2026-11-24">
             <div>
                 <h2>Dasar Program Keahlian MPLB</h2>
                 <p>Hari/Tanggal : Selasa / 24 November 2026<br>Waktu: 10.00-11.00</p>
@@ -195,7 +203,7 @@
         </div>
 
         <!-- Kartu dasar program keahlian TPFL -->
-        <div class="card card-dasarprogramkeahlianTPFL" id="mapel-tpfl">
+        <div class="card card-dasarprogramkeahlianTPFL" id="mapel-tpfl" data-exam-date="2026-11-24">
             <div>
                 <h2>Dasar Program Keahlian TPFL</h2>
                 <p>Hari / Tanggal : Selasa / 24 November 2026<br> Waktu: 10.00-11.00</p>
@@ -204,16 +212,16 @@
         </div>
 
         <!-- Kartu dasar program keahlian TKRO -->
-        <div class="card card-dasarprogramkeahlianTKRO" id="mapel-tkro">
+        <div class="card card-dasarprogramkeahlianTKRO" id="mapel-tkro" data-exam-date="2026-11-24">
             <div>
                 <h2>Dasar Program Keahlian TKRO</h2>
                 <p>Hari / Tanggal : Selasa / 24 November 2026<br> Waktu: 10.00-11.00</p>
             </div>  
-            <a href="https://forms.gle/kFX3f3yTh8x7s6sj8" target="_blank" class="btn-link">Mulai Ujian</a>
+            <a href="https://forms.gle/8BbrRupsefvrtkFu5" target="_blank" class="btn-link">Mulai Ujian</a>
         </div>
 
         <!-- Kartu Informatika -->
-        <div class="card card-informatika" id="mapel-informatika">
+        <div class="card card-informatika" id="mapel-informatika" data-exam-date="2026-11-26">
             <div>
                 <h2>Informatika</h2>
                 <p>Hari/Tanggal : Kamis / 26 November 2026<br>Waktu: 07.30-08.30</p>
@@ -222,7 +230,7 @@
         </div>
 
         <!-- Kartu Sejarah -->
-        <div class="card card-Sejarah" id="mapel-sejarah">
+        <div class="card card-Sejarah" id="mapel-sejarah" data-exam-date="2026-11-26">
             <div>
                 <h2>Sejarah</h2>
                 <p>Hari/Tanggal : Kamis / 26 November 2026<br>Waktu: 08.30-09.30</p>
@@ -231,7 +239,7 @@
         </div>
 
         <!-- Kartu Penjaskes -->
-        <div class="card card-Penjaskes" id="mapel-penjaskes">
+        <div class="card card-Penjaskes" id="mapel-penjaskes" data-exam-date="2026-11-26">
             <div>
                 <h2>Penjaskes</h2>
                 <p>Hari/Tanggal : Kamis / 26 November<br>Waktu: 10.00-11.00</p>
@@ -240,7 +248,7 @@
         </div>
 
         <!-- Kartu Bahasa Inggris -->
-        <div class="card card-BahasaInggris" id="mapel-binggris">
+        <div class="card card-BahasaInggris" id="mapel-binggris" data-exam-date="2026-11-27">
             <div>
                 <h2>Bahasa Inggris</h2>
                 <p>Hari/Tanggal : Jumat / 27 November 2026<br>Waktu: 07.30-08.30</p>
@@ -249,7 +257,7 @@
         </div>
 
         <!-- Kartu Bahasa Jawa -->
-        <div class="card card-BahasaJawa" id="mapel-bjawa">
+        <div class="card card-BahasaJawa" id="mapel-bjawa" data-exam-date="2026-11-27">
             <div>
                 <h2>Bahasa Jawa</h2>
                 <p>Hari/Tanggal : Jumat / 27 November 2026<br>Waktu: 08.30-09.30</p>
@@ -258,7 +266,7 @@
         </div>
 
         <!-- Kartu KKA -->
-        <div class="card card-KKA" id="mapel-KKA">
+        <div class="card card-KKA" id="mapel-KKA" data-exam-date="2026-11-27">
             <div>
                 <h2>KKA</h2>
                 <p>Hari/Tanggal : Jumat / 27 November 2026<br>Waktu: 10.00-11.00</p>
@@ -266,5 +274,35 @@
             <a href="https://forms.gle/2tB1SoRPGcHuwQX18" target="_blank" class="btn-link">Mulai Ujian</a>
         </div>
     </div>
+<script>
+    // Tampilkan hanya mata pelajaran yang tanggal ujiannya sama dengan tanggal hari ini.
+    (function tampilkanMapelHariIni() {
+        const now = new Date();
+        const tahun = now.getFullYear();
+        const bulan = String(now.getMonth() + 1).padStart(2, '0');
+        const tanggal = String(now.getDate()).padStart(2, '0');
+        const hariIni = `${tahun}-${bulan}-${tanggal}`;
+
+        const semuaKartu = document.querySelectorAll('.container .card[data-exam-date]');
+        let jumlahTampil = 0;
+
+        semuaKartu.forEach((kartu) => {
+            const sesuaiHari = kartu.dataset.examDate === hariIni;
+            kartu.hidden = !sesuaiHari;
+            if (sesuaiHari) jumlahTampil++;
+        });
+
+        const info = document.getElementById('today-info');
+        const namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'][now.getDay()];
+        const namaBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'][now.getMonth()];
+        const tanggalTeks = `${namaHari}, ${now.getDate()} ${namaBulan} ${tahun}`;
+
+        if (jumlahTampil > 0) {
+            info.textContent = `Jadwal ujian hari ini: ${tanggalTeks}`;
+        } else {
+            info.textContent = `Tidak ada jadwal ujian untuk hari ini (${tanggalTeks}).`;
+        }
+    })();
+</script>
 </body>
 </html>
